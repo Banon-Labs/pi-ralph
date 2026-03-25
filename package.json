@@ -1,0 +1,40 @@
+{
+  "name": "pi-ralph",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Standalone Pi-native iterative supervisor loop extension extracted from Voice Forge.",
+  "type": "module",
+  "license": "MIT",
+  "main": "src/pi-ralph-runtime.ts",
+  "files": [
+    "src",
+    "docs",
+    "examples",
+    "README.md",
+    "CONTRIBUTING.md",
+    "LICENSE",
+    "AGENTS.md"
+  ],
+  "keywords": [
+    "pi-package",
+    "pi",
+    "extension",
+    "agent",
+    "supervisor",
+    "loop"
+  ],
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "peerDependencies": {
+    "@mariozechner/pi-coding-agent": "*",
+    "@mariozechner/pi-ai": "*",
+    "@mariozechner/pi-tui": "*",
+    "@sinclair/typebox": "*"
+  },
+  "pi": {
+    "extensions": [
+      "./src/pi-ralph-runtime.ts"
+    ]
+  }
+}
