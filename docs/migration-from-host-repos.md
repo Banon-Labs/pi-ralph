@@ -20,8 +20,11 @@ A host repo should not own:
 Current shim:
 - `.pi/extensions/pi-ralph-runtime.ts`
 
-Current canonical runtime path during the scaffold phase:
-- `pi-ralph/src/pi-ralph-runtime.ts`
+Current canonical runtime path:
+- `~/projects/pi-ralph/src/pi-ralph-runtime.ts`
+
+Current GitHub repo:
+- `https://github.com/Banon-Labs/pi-ralph`
 
 ## Desired post-publish state
 
@@ -39,8 +42,12 @@ Dedicated repo keeps:
 
 ## Host migration recipe
 
-1. add the dedicated `pi-ralph` source to the host repo's Pi extension loading path
-2. replace any copied runtime implementation with a tiny shim import/export
+Current recommended host-consumption mode is a sibling git checkout.
+
+1. clone `https://github.com/Banon-Labs/pi-ralph` as a sibling repo, typically at `~/projects/pi-ralph`
+2. add a tiny shim in the host repo's `.pi/extensions/` directory that re-exports from `../../../pi-ralph/src/pi-ralph-runtime`
 3. keep host-specific prompts in the host repo
 4. run interactive tmux smoke test to verify command loading and widget behavior
 5. remove stale duplicated runtime copies after the shim works
+
+Package-install consumption can be added later once `pi-ralph` is published as an installable package.

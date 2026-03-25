@@ -1,0 +1,9 @@
+export const TOOL_NAME = "search_web";
+export const COMMAND_NAME = "search-web";
+export const CACHE_ROOT = ".pi/web-searches";
+export const POLICY_VERSION = 1;
+export const FETCH_TIMEOUT_MS = 25_000;
+export const DEFAULT_LIMIT = 5;
+export const MAX_LIMIT = 10;
+export const DEFAULT_PROVIDER = "exa-mcp";
+export const SEARCH_PROVIDER_ENV = "HELMSMAN_SEARCH_PROVIDER";

@@ -2,12 +2,17 @@
   "name": "pi-ralph",
   "private": true,
   "version": "0.1.0",
-  "description": "Standalone Pi-native iterative supervisor loop extension extracted from Voice Forge.",
+  "description": "Standalone Pi-native iterative supervisor loop extension for reusable host-repo consumption.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Banon-Labs/pi-ralph.git"
+  },
   "type": "module",
   "license": "MIT",
   "main": "src/pi-ralph-runtime.ts",
   "files": [
     "src",
+    ".pi/extensions",
     "docs",
     "examples",
     "README.md",
@@ -34,7 +39,9 @@
   },
   "pi": {
     "extensions": [
-      "./src/pi-ralph-runtime.ts"
+      "./src/pi-ralph-runtime.ts",
+      "./.pi/extensions/web-content.ts",
+      "./.pi/extensions/web-search.ts"
     ]
   }
 }

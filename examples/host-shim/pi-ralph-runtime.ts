@@ -1,5 +1,8 @@
-// Example host-repo shim.
-// Replace the import path with the installed package path or vendored source path
-// once pi-ralph is published to its own repository/package.
+// Example host-repo shim for a sibling checkout layout such as:
+//   ~/projects/voice-forge/.pi/extensions/pi-ralph-runtime.ts
+//   ~/projects/pi-ralph/src/pi-ralph-runtime.ts
+//
+// If the host repo clones `pi-ralph` as a sibling under ~/projects,
+// this relative import shape works from the host repo's `.pi/extensions/` dir.
 
-export { default } from "../../../src/pi-ralph-runtime";
+export { default } from "../../../pi-ralph/src/pi-ralph-runtime";

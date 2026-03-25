@@ -1,0 +1,21 @@
+{
+  "query": "pi coding agent",
+  "provider": "exa-mcp",
+  "searchUrl": "https://mcp.exa.ai/mcp",
+  "cacheKey": "9592a7774760dbaf31792c16e2948082e992461c33408145a7f9f5d00f0a927c",
+  "resultCount": 1,
+  "results": [
+    {
+      "title": "How I Turned Pi Into a Multi-Agent Coding Assistant | by Ricardo Ruiz | Mar, 2026 | Medium",
+      "url": "https://medium.com/@ruizrica2/how-i-turned-pi-into-a-multi-agent-coding-assistant-cb1c2f1c8145",
+      "snippet": "Get app Write Search Sign up Sign in Ricardo Ruiz 4 min read 5 days ago -- Listen Share How I Turned Pi Into a Multi-Agent Coding Assistant I’ve been using Pi the terminal-based AI coding agent by @badlogic as my daily driver for a while now. Out of the box, it’s already a solid single agent assistant with tool use, conversation memory, and a nice TUI. But over time I kept wanting more from it, so I started writing extensions. One turned into five, five turned into 28, and at some point the whole thing became its own project: agent. Today I’m open sourcing it. It’s been my private toolkit for a while, but it’s reached a point where I use it every day ... Agent is really just a collection of extensions and config files that sit on top of Pi. No forks, no patches everything loads through Pi’s extension API and a `settings.json` file. The idea was to keep it portable and easy to update when Pi itself gets new releases. The biggest additions are six operational modes I can cycle through with Shift+Tab. Most of the time I’m in PLAN mode, which forces me to think through what I’m doing before the agent starts touching files. There’s also SPEC mode for when I need to shape requirements first, and TEAM/CHAIN/PIPELINE modes for when a task is complex enough that it helps to ... The Multi-Agent Stuff This is probably the part I’m most stoked about, though it’s still evolving. Teams, chains, and pipelines are all defined in YAML files. A team is just a list of agent names — a planner, a builder, a reviewer — and the primary agent dispatches work to them. Chains are sequential: one agent’s output feeds into the next. Pipelines combine phases with ... Agent definitions are Markdown files with YAML frontmatter. Adding a new specialist is as simple as writing a `.md` ... This part started as a quick hack and turned into one of my favorite features. There are browser-based GUIs that open ... I’ve configured over 30 models across providers like Anthropic, OpenAI, Google, Mercury, Synthetic, and OpenRouter. ... There’s a companion project called Commander that acts as a dashboard Kanban board, spec wizard, Jira integration. Agent connects to it over MCP and tasks sync both ways. I use them together, but they’re fully independent. You don’t ... If You Want to Try It It’s MIT licensed and the setup is pretty simple: Bun, Pi installed globally, clone the repo, `npm install`, and run `pi` from the agent directory. Everything loads automatically from there. I’m still actively working on this, so things will change and there’s plenty to improve. But if you’re a Pi user looking to push it further, or just curious about multi-agent orchestration in a terminal-first workflow, feel free to poke around. Contributions are welcome, and I’m happy to answer questions. GitHub: https://github.com/ruizrica/agent-pi Cheers 🍻 Agentic Engineering AI Developer Tools ## Written by Ricardo Ruiz [Written by Ricardo Ru",
+      "rank": 1
+    }
+  ],
+  "bodyPath": "/home/choza/projects/pi-ralph/.pi/web-searches/95/9592a7774760dbaf31792c16e2948082e992461c33408145a7f9f5d00f0a927c/search-9592a7774760.json",
+  "relativeBodyPath": ".pi/web-searches/95/9592a7774760dbaf31792c16e2948082e992461c33408145a7f9f5d00f0a927c/search-9592a7774760.json",
+  "provenancePath": "/home/choza/projects/pi-ralph/.pi/web-searches/95/9592a7774760dbaf31792c16e2948082e992461c33408145a7f9f5d00f0a927c/search-9592a7774760.json.provenance.json",
+  "relativeProvenancePath": ".pi/web-searches/95/9592a7774760dbaf31792c16e2948082e992461c33408145a7f9f5d00f0a927c/search-9592a7774760.json.provenance.json",
+  "fetchedAt": "2026-03-25T22:33:55.424Z",
+  "policyVersion": 1
+}
